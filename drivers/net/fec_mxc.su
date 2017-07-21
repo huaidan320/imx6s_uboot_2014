@@ -1,0 +1,13 @@
+fec_mxc.c:359:12:fec_set_hwaddr	0	static
+fec_mxc.c:382:13:fec_reg_setup	0	static
+fec_mxc.c:176:5:fec_phy_read	16	static
+fec_mxc.c:181:5:fec_phy_write	16	static
+fec_mxc.c:581:13:fec_halt	16	static
+fec_mxc.c:623:12:fec_send	24	static
+fec_mxc.c:127:13:fec_mii_setspeed	8	static
+fec_mxc.c:523:12:fec_init	32	static
+fec_mxc.c:741:12:fec_recv	1600	static
+fec_mxc.c:941:5:fec_probe	48	static
+fec_mxc.c:1031:17:fec_get_miibus	16	static
+fec_mxc.c:1057:5:fecmxc_initialize_multi	32	static
+fec_mxc.c:1099:5:fecmxc_initialize	0	static

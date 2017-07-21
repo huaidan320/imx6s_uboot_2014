@@ -1,0 +1,8 @@
+cpu.c:28:7:get_reset_cause	0	static
+cpu.c:91:10:imx_ddr_size	0	static
+cpu.c:109:13:get_imx_type	0	static
+cpu.c:133:5:print_cpuinfo	24	static
+cpu.c:166:5:cpu_eth_init	0	static
+cpu.c:182:5:cpu_mmc_init	0	static
+cpu.c:188:5:get_ahb_clk	8	static
+cpu.c:200:6:arch_preboot_os	8	static
