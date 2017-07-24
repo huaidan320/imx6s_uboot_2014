@@ -1,4 +1,4 @@
-cmd_drivers/usb/host/ehci-mx6.o := arm-linux-gnueabihf-gcc -Wp,-MD,drivers/usb/host/.ehci-mx6.o.d  -nostdinc -isystem /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.9.2/include -Iinclude  -I/home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x17800000 -Wall -Wstrict-prototypes -Wno-format-security -fno-builtin -ffreestanding -Os -fno-stack-protector -g -fstack-usage -Wno-format-nonliteral -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork -mabi=aapcs-linux -mword-relocations -march=armv7-a -mno-unaligned-access -ffunction-sections -fdata-sections -fno-common -ffixed-r9 -msoft-float -pipe    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(ehci_mx6)"  -D"KBUILD_MODNAME=KBUILD_STR(ehci_mx6)" -c -o drivers/usb/host/ehci-mx6.o drivers/usb/host/ehci-mx6.c
+cmd_drivers/usb/host/ehci-mx6.o := arm-linux-gnueabihf-gcc -Wp,-MD,drivers/usb/host/.ehci-mx6.o.d  -nostdinc -isystem /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.9.2/include -Iinclude  -I/home/linux/github/imx6s_uboot_2014/arch/arm/include -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x17800000 -Wall -Wstrict-prototypes -Wno-format-security -fno-builtin -ffreestanding -Os -fno-stack-protector -g -fstack-usage -Wno-format-nonliteral -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork -mabi=aapcs-linux -mword-relocations -march=armv7-a -mno-unaligned-access -ffunction-sections -fdata-sections -fno-common -ffixed-r9 -msoft-float -pipe    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(ehci_mx6)"  -D"KBUILD_MODNAME=KBUILD_STR(ehci_mx6)" -c -o drivers/usb/host/ehci-mx6.o drivers/usb/host/ehci-mx6.c
 
 source_drivers/usb/host/ehci-mx6.o := drivers/usb/host/ehci-mx6.c
 
@@ -190,15 +190,15 @@ deps_drivers/usb/host/ehci-mx6.o := \
     $(wildcard include/config/waveform/file/in/mmc.h) \
     $(wildcard include/config/splash/img/offset.h) \
     $(wildcard include/config/splash/img/size.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/imx-regs.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/imx-regs.h \
     $(wildcard include/config/sys/cacheline/size.h) \
     $(wildcard include/config/mx6sl.h) \
     $(wildcard include/config/mx6sx.h) \
     $(wildcard include/config/base/addr.h) \
     $(wildcard include/config/mx6dl.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/types.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/types.h \
     $(wildcard include/config/arm64.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/imx-common/gpio.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/imx-common/gpio.h \
   include/configs/mx6sabre_common.h \
     $(wildcard include/config/mx6.h) \
     $(wildcard include/config/use/plugin.h) \
@@ -376,7 +376,7 @@ deps_drivers/usb/host/ehci-mx6.o := \
     $(wildcard include/config/cmd/setgetdcr.h) \
     $(wildcard include/config/cmd/source.h) \
     $(wildcard include/config/cmd/ximg.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/config.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/config.h \
     $(wildcard include/config/h/.h) \
     $(wildcard include/config/lmb.h) \
     $(wildcard include/config/sys/boot/ramdisk/high.h) \
@@ -418,24 +418,24 @@ deps_drivers/usb/host/ehci-mx6.o := \
   include/asm-offsets.h \
   include/generated/generic-asm-offsets.h \
   include/linux/bitops.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/bitops.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/proc/system.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/bitops.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/proc/system.h \
     $(wildcard include/config/cpu/sa1100.h) \
     $(wildcard include/config/cpu/sa110.h) \
   include/linux/types.h \
     $(wildcard include/config/uid16.h) \
   include/linux/posix_types.h \
   include/linux/stddef.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/posix_types.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/posix_types.h \
   /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stdbool.h \
   include/linux/string.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/string.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/string.h \
     $(wildcard include/config/use/arch/memcpy.h) \
     $(wildcard include/config/use/arch/memset.h) \
   include/linux/linux_string.h \
   include/linux/stringify.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/ptrace.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/proc/ptrace.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/ptrace.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/proc/ptrace.h \
     $(wildcard include/config/arm/thumb.h) \
   /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stdarg.h \
   include/part.h \
@@ -474,7 +474,7 @@ deps_drivers/usb/host/ehci-mx6.o := \
     $(wildcard include/config/android/boot/image.h) \
   include/compiler.h \
   /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stddef.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/byteorder.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/compiler.h \
     $(wildcard include/config/trace/branch/profiling.h) \
@@ -488,7 +488,7 @@ deps_drivers/usb/host/ehci-mx6.o := \
   include/linux/byteorder/swab.h \
   include/linux/byteorder/generic.h \
   include/lmb.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/u-boot.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/u-boot.h \
   include/asm-generic/u-boot.h \
     $(wildcard include/config/e500.h) \
     $(wildcard include/config/cpm2.h) \
@@ -512,7 +512,7 @@ deps_drivers/usb/host/ehci-mx6.o := \
     $(wildcard include/config/cmd/portio.h) \
     $(wildcard include/config/needs/manual/reloc.h) \
   include/linker_lists.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/global_data.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/global_data.h \
     $(wildcard include/config/omap.h) \
     $(wildcard include/config/at91family.h) \
     $(wildcard include/config/sys/icache/off.h) \
@@ -525,7 +525,7 @@ deps_drivers/usb/host/ehci-mx6.o := \
     $(wildcard include/config/trace.h) \
   include/linux/list.h \
   include/linux/poison.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/mach-types.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/mach-types.h \
     $(wildcard include/config/arch/ebsa110.h) \
     $(wildcard include/config/arch/rpc.h) \
     $(wildcard include/config/arch/ebsa285.h) \
@@ -1620,8 +1620,8 @@ deps_drivers/usb/host/ehci-mx6.o := \
     $(wildcard include/config/mach/omap5/sevm.h) \
     $(wildcard include/config/mach/armadillo800eva.h) \
     $(wildcard include/config/mach/kzm9g.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/setup.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/u-boot-arm.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/setup.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/u-boot-arm.h \
   include/uuid.h \
   include/vsprintf.h \
     $(wildcard include/config/sys/vsnprintf.h) \
@@ -1633,8 +1633,8 @@ deps_drivers/usb/host/ehci-mx6.o := \
     $(wildcard include/config/api.h) \
     $(wildcard include/config/bootp/dns2.h) \
     $(wildcard include/config/netconsole.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/cache.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/system.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/cache.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/system.h \
   include/bootstage.h \
     $(wildcard include/config/bootstage/user/count.h) \
     $(wildcard include/config/bootstage.h) \
@@ -1666,7 +1666,7 @@ deps_drivers/usb/host/ehci-mx6.o := \
     $(wildcard include/config/att/selfpower.h) \
     $(wildcard include/config/att/wakeup.h) \
     $(wildcard include/config/att/battery.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/unaligned.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/unaligned.h \
   include/linux/unaligned/le_byteshift.h \
   include/linux/unaligned/be_byteshift.h \
   include/linux/unaligned/generic.h \
@@ -1681,19 +1681,19 @@ deps_drivers/usb/host/ehci-mx6.o := \
     $(wildcard include/config/sys/mpc85xx/usb1/addr.h) \
     $(wildcard include/config/sys/mpc85xx/usb2/addr.h) \
     $(wildcard include/config/sys/mpc512x/usb1/addr.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/processor.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/atomic.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/processor.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/atomic.h \
     $(wildcard include/config/smp.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/proc/processor.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/proc/domain.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/io.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/memory.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/proc/processor.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/proc/domain.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/io.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/memory.h \
     $(wildcard include/config/discontigmem.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/crm_regs.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/clock.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/crm_regs.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/clock.h \
     $(wildcard include/config/sys/mx6/hclk.h) \
     $(wildcard include/config/sys/mx6/clk32.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/imx-common/iomux-v3.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/imx-common/iomux-v3.h \
     $(wildcard include/config/sion.h) \
     $(wildcard include/config/vf610.h) \
   drivers/usb/host/ehci.h \

@@ -1,11 +1,11 @@
-cmd_tools/image-fit.o := gcc -Wp,-MD,tools/.image-fit.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -include /home/linux/imx6solo/u-boot/u-boot-imx/include/libfdt_env.h -idirafterinclude -idirafter/home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include -I/home/linux/imx6solo/u-boot/u-boot-imx/lib/libfdt -I/home/linux/imx6solo/u-boot/u-boot-imx/tools -DCONFIG_SYS_TEXT_BASE=0x17800000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -D_GNU_SOURCE  -c -o tools/image-fit.o tools/image-fit.c
+cmd_tools/image-fit.o := gcc -Wp,-MD,tools/.image-fit.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -include /home/linux/github/imx6s_uboot_2014/include/libfdt_env.h -idirafterinclude -idirafter/home/linux/github/imx6s_uboot_2014/arch/arm/include -I/home/linux/github/imx6s_uboot_2014/lib/libfdt -I/home/linux/github/imx6s_uboot_2014/tools -DCONFIG_SYS_TEXT_BASE=0x17800000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -D_GNU_SOURCE  -c -o tools/image-fit.o tools/image-fit.c
 
 source_tools/image-fit.o := tools/image-fit.c
 
 deps_tools/image-fit.o := \
   /usr/include/stdc-predef.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/include/libfdt_env.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/include/compiler.h \
+  /home/linux/github/imx6s_uboot_2014/include/libfdt_env.h \
+  /home/linux/github/imx6s_uboot_2014/include/compiler.h \
   /usr/lib/gcc/i686-linux-gnu/4.8/include/stddef.h \
   /usr/lib/gcc/i686-linux-gnu/4.8/include/stdint.h \
   /usr/include/stdint.h \
@@ -67,7 +67,7 @@ deps_tools/image-fit.o := \
   /usr/include/i386-linux-gnu/bits/stat.h \
   /usr/include/i386-linux-gnu/bits/fcntl2.h \
   /usr/include/byteswap.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/include/linux/types.h \
+  /home/linux/github/imx6s_uboot_2014/include/linux/types.h \
     $(wildcard include/config/uid16.h) \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/stddef.h \
@@ -84,8 +84,8 @@ deps_tools/image-fit.o := \
   tools/../common/image-fit.c \
     $(wildcard include/config/spl/build.h) \
     $(wildcard include/config/fit/spl/print.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/tools/mkimage.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/tools/os_support.h \
+  /home/linux/github/imx6s_uboot_2014/tools/mkimage.h \
+  /home/linux/github/imx6s_uboot_2014/tools/os_support.h \
   include/compiler.h \
   /usr/include/i386-linux-gnu/sys/stat.h \
   /usr/include/i386-linux-gnu/bits/timex.h \
@@ -96,17 +96,17 @@ deps_tools/image-fit.o := \
   /usr/include/getopt.h \
   /usr/include/i386-linux-gnu/bits/unistd.h \
   include/sha1.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/tools/fdt_host.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/tools/../include/libfdt.h \
+  /home/linux/github/imx6s_uboot_2014/tools/fdt_host.h \
+  /home/linux/github/imx6s_uboot_2014/tools/../include/libfdt.h \
   include/libfdt_env.h \
   include/fdt.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/tools/../include/fdt_support.h \
+  /home/linux/github/imx6s_uboot_2014/tools/../include/fdt_support.h \
     $(wildcard include/config/of/libfdt.h) \
     $(wildcard include/config/has/fsl/dr/usb.h) \
     $(wildcard include/config/has/fsl/mph/usb.h) \
     $(wildcard include/config/sys/fsl/sec/compat.h) \
     $(wildcard include/config/pci.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/tools/imagetool.h \
+  /home/linux/github/imx6s_uboot_2014/tools/imagetool.h \
   include/image.h \
     $(wildcard include/config/fit.h) \
     $(wildcard include/config/fit/verbose.h) \

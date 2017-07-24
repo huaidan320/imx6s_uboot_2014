@@ -1,11 +1,11 @@
-cmd_tools/kwbimage.o := gcc -Wp,-MD,tools/.kwbimage.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -include /home/linux/imx6solo/u-boot/u-boot-imx/include/libfdt_env.h -idirafterinclude -idirafter/home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include -I/home/linux/imx6solo/u-boot/u-boot-imx/lib/libfdt -I/home/linux/imx6solo/u-boot/u-boot-imx/tools -DCONFIG_SYS_TEXT_BASE=0x17800000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -D_GNU_SOURCE  -c -o tools/kwbimage.o tools/kwbimage.c
+cmd_tools/kwbimage.o := gcc -Wp,-MD,tools/.kwbimage.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -include /home/linux/github/imx6s_uboot_2014/include/libfdt_env.h -idirafterinclude -idirafter/home/linux/github/imx6s_uboot_2014/arch/arm/include -I/home/linux/github/imx6s_uboot_2014/lib/libfdt -I/home/linux/github/imx6s_uboot_2014/tools -DCONFIG_SYS_TEXT_BASE=0x17800000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -D_GNU_SOURCE  -c -o tools/kwbimage.o tools/kwbimage.c
 
 source_tools/kwbimage.o := tools/kwbimage.c
 
 deps_tools/kwbimage.o := \
   /usr/include/stdc-predef.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/include/libfdt_env.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/include/compiler.h \
+  /home/linux/github/imx6s_uboot_2014/include/libfdt_env.h \
+  /home/linux/github/imx6s_uboot_2014/include/compiler.h \
   /usr/lib/gcc/i686-linux-gnu/4.8/include/stddef.h \
   /usr/lib/gcc/i686-linux-gnu/4.8/include/stdint.h \
   /usr/include/stdint.h \
@@ -67,7 +67,7 @@ deps_tools/kwbimage.o := \
   /usr/include/i386-linux-gnu/bits/stat.h \
   /usr/include/i386-linux-gnu/bits/fcntl2.h \
   /usr/include/byteswap.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/include/linux/types.h \
+  /home/linux/github/imx6s_uboot_2014/include/linux/types.h \
     $(wildcard include/config/uid16.h) \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/stddef.h \

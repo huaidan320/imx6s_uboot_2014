@@ -1,12 +1,12 @@
-cmd_tools/imximage.o := gcc -Wp,-MD,tools/.imximage.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -include /home/linux/imx6solo/u-boot/u-boot-imx/include/libfdt_env.h -idirafterinclude -idirafter/home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include -I/home/linux/imx6solo/u-boot/u-boot-imx/lib/libfdt -I/home/linux/imx6solo/u-boot/u-boot-imx/tools -DCONFIG_SYS_TEXT_BASE=0x17800000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -D_GNU_SOURCE  -c -o tools/imximage.o tools/imximage.c
+cmd_tools/imximage.o := gcc -Wp,-MD,tools/.imximage.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -include /home/linux/github/imx6s_uboot_2014/include/libfdt_env.h -idirafterinclude -idirafter/home/linux/github/imx6s_uboot_2014/arch/arm/include -I/home/linux/github/imx6s_uboot_2014/lib/libfdt -I/home/linux/github/imx6s_uboot_2014/tools -DCONFIG_SYS_TEXT_BASE=0x17800000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -D_GNU_SOURCE  -c -o tools/imximage.o tools/imximage.c
 
 source_tools/imximage.o := tools/imximage.c
 
 deps_tools/imximage.o := \
     $(wildcard include/config/use/plugin.h) \
   /usr/include/stdc-predef.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/include/libfdt_env.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/include/compiler.h \
+  /home/linux/github/imx6s_uboot_2014/include/libfdt_env.h \
+  /home/linux/github/imx6s_uboot_2014/include/compiler.h \
   /usr/lib/gcc/i686-linux-gnu/4.8/include/stddef.h \
   /usr/lib/gcc/i686-linux-gnu/4.8/include/stdint.h \
   /usr/include/stdint.h \
@@ -68,7 +68,7 @@ deps_tools/imximage.o := \
   /usr/include/i386-linux-gnu/bits/stat.h \
   /usr/include/i386-linux-gnu/bits/fcntl2.h \
   /usr/include/byteswap.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/include/linux/types.h \
+  /home/linux/github/imx6s_uboot_2014/include/linux/types.h \
     $(wildcard include/config/uid16.h) \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/stddef.h \
@@ -207,13 +207,13 @@ deps_tools/imximage.o := \
     $(wildcard include/config/waveform/file/in/mmc.h) \
     $(wildcard include/config/splash/img/offset.h) \
     $(wildcard include/config/splash/img/size.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/imx-regs.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/imx-regs.h \
     $(wildcard include/config/sys/cacheline/size.h) \
     $(wildcard include/config/mx6sl.h) \
     $(wildcard include/config/mx6sx.h) \
     $(wildcard include/config/base/addr.h) \
     $(wildcard include/config/mx6dl.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/imx-common/gpio.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/imx-common/gpio.h \
   include/configs/mx6sabre_common.h \
     $(wildcard include/config/mx6.h) \
     $(wildcard include/config/secure/boot.h) \
@@ -394,7 +394,7 @@ deps_tools/imximage.o := \
     $(wildcard include/config/cmd/setgetdcr.h) \
     $(wildcard include/config/cmd/source.h) \
     $(wildcard include/config/cmd/ximg.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/config.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/config.h \
     $(wildcard include/config/h/.h) \
     $(wildcard include/config/arm64.h) \
     $(wildcard include/config/phys/64bit.h) \

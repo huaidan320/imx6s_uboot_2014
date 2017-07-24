@@ -1,4 +1,4 @@
-cmd_arch/arm/lib/crt0.o := arm-linux-gnueabihf-gcc -Wp,-MD,arch/arm/lib/.crt0.o.d  -nostdinc -isystem /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.9.2/include -Iinclude  -I/home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x17800000 -D__ASSEMBLY__ -g     -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork  -mabi=aapcs-linux  -mword-relocations  -march=armv7-a  -mno-unaligned-access  -ffunction-sections -fdata-sections -fno-common -ffixed-r9  -msoft-float  -pipe     -c -o arch/arm/lib/crt0.o arch/arm/lib/crt0.S
+cmd_arch/arm/lib/crt0.o := arm-linux-gnueabihf-gcc -Wp,-MD,arch/arm/lib/.crt0.o.d  -nostdinc -isystem /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.9.2/include -Iinclude  -I/home/linux/github/imx6s_uboot_2014/arch/arm/include -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x17800000 -D__ASSEMBLY__ -g     -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork  -mabi=aapcs-linux  -mword-relocations  -march=armv7-a  -mno-unaligned-access  -ffunction-sections -fdata-sections -fno-common -ffixed-r9  -msoft-float  -pipe     -c -o arch/arm/lib/crt0.o arch/arm/lib/crt0.S
 
 source_arch/arm/lib/crt0.o := arch/arm/lib/crt0.S
 
@@ -81,13 +81,13 @@ deps_arch/arm/lib/crt0.o := \
     $(wildcard include/config/waveform/file/in/mmc.h) \
     $(wildcard include/config/splash/img/offset.h) \
     $(wildcard include/config/splash/img/size.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/imx-regs.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/imx-regs.h \
     $(wildcard include/config/sys/cacheline/size.h) \
     $(wildcard include/config/mx6sl.h) \
     $(wildcard include/config/mx6sx.h) \
     $(wildcard include/config/base/addr.h) \
     $(wildcard include/config/mx6dl.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/imx-common/gpio.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/imx-common/gpio.h \
   include/configs/mx6sabre_common.h \
     $(wildcard include/config/mx6.h) \
     $(wildcard include/config/use/plugin.h) \
@@ -269,7 +269,7 @@ deps_arch/arm/lib/crt0.o := \
     $(wildcard include/config/cmd/setgetdcr.h) \
     $(wildcard include/config/cmd/source.h) \
     $(wildcard include/config/cmd/ximg.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/config.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/config.h \
     $(wildcard include/config/h/.h) \
     $(wildcard include/config/lmb.h) \
     $(wildcard include/config/sys/boot/ramdisk/high.h) \
@@ -314,7 +314,7 @@ deps_arch/arm/lib/crt0.o := \
   include/asm-offsets.h \
   include/generated/generic-asm-offsets.h \
   include/linux/linkage.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/linkage.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/linkage.h \
 
 arch/arm/lib/crt0.o: $(deps_arch/arm/lib/crt0.o)
 

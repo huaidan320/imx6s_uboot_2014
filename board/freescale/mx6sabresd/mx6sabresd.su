@@ -14,7 +14,7 @@ mx6sabresd.c:1262:5:overwrite_console	0	static
 mx6sabresd.c:1267:5:board_eth_init	8	static
 mx6sabresd.c:1275:5:board_early_init_f	8	static
 mx6sabresd.c:1297:5:board_init	0	static
-mx6sabresd.c:1321:5:board_late_init	40	static
-mx6sabresd.c:1343:5:checkboard	8	static
-mx6sabresd.c:1488:5:board_ehci_hcd_init	8	static
-mx6sabresd.c:1509:5:board_ehci_power	8	static
+mx6sabresd.c:1322:5:board_late_init	40	static
+mx6sabresd.c:1344:5:checkboard	8	static
+mx6sabresd.c:1489:5:board_ehci_hcd_init	8	static
+mx6sabresd.c:1510:5:board_ehci_power	8	static

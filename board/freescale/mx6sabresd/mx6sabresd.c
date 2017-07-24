@@ -726,7 +726,7 @@ int board_mmc_init(bd_t *bis)
 			
 			break;
 		case 2:
-#ifndef CONFIG_SYS_USE_NAND
+//#ifndef CONFIG_SYS_USE_NAND
 //Modify sun
 			//imx_iomux_v3_setup_multiple_pads(
 			//	usdhc4_pads, ARRAY_SIZE(usdhc4_pads));
@@ -734,7 +734,7 @@ int board_mmc_init(bd_t *bis)
 			imx_iomux_v3_setup_multiple_pads(
 				usdhc3_pads, ARRAY_SIZE(usdhc3_pads));
 			usdhc_cfg[2].sdhc_clk = mxc_get_clock(MXC_ESDHC3_CLK);
-#endif
+//#endif
 			break;
 		default:
 			printf("Warning: you configured more USDHC controllers"
@@ -1311,7 +1311,8 @@ static const struct boot_mode board_boot_modes[] = {
 	/* 4 bit bus width */
 	{"sd1",	 MAKE_CFGVAL(0x40, 0x26, 0x00, 0x00)},
 	{"sd2",	 MAKE_CFGVAL(0x40, 0x28, 0x00, 0x00)},
-	{"sd3",	 MAKE_CFGVAL(0x40, 0x30, 0x00, 0x00)},
+	{"sd3",	 MAKE_CFGVAL(0x60, 0x30, 0x00, 0x00)},
+	//{"sd3",	 MAKE_CFGVAL(0x40, 0x30, 0x00, 0x00)},
 	/* 8 bit bus width */
 	{"emmc", MAKE_CFGVAL(0x60, 0x58, 0x00, 0x00)},
 	{NULL,	 0},

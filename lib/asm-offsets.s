@@ -14,7 +14,7 @@
 @	compiled by GNU C version 4.1.3 20080704 (prerelease) (Ubuntu 4.1.2-27ubuntu1), GMP version 5.0.2, MPFR version 3.1.0, MPC version 0.9
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc -I include
-@ -I /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include -imultilib .
+@ -I /home/linux/github/imx6s_uboot_2014/arch/arm/include -imultilib .
 @ -imultiarch arm-linux-gnueabihf
 @ -iprefix /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.9.2/
 @ -isysroot /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin/../arm-linux-gnueabihf/libc
@@ -127,7 +127,7 @@ main:
 	.size	main, .-main
 	.text
 .Letext0:
-	.file 2 "/home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/types.h"
+	.file 2 "/home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/types.h"
 	.file 3 "include/linux/types.h"
 	.file 4 "include/asm-generic/u-boot.h"
 	.file 5 "include/net.h"
@@ -870,14 +870,14 @@ main:
 	.ascii	"NETLOOP_SUCCESS\000"
 .LASF31:
 	.ascii	"bi_baudrate\000"
-.LASF58:
-	.ascii	"/home/linux/imx6solo/u-boot/u-boot-imx\000"
 .LASF11:
 	.ascii	"phys_size_t\000"
 .LASF12:
 	.ascii	"ulong\000"
 .LASF5:
 	.ascii	"unsigned int\000"
+.LASF58:
+	.ascii	"/home/linux/github/imx6s_uboot_2014\000"
 .LASF43:
 	.ascii	"send\000"
 .LASF20:

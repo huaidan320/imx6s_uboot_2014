@@ -1,4 +1,4 @@
-cmd_board/freescale/mx6sabresd/mx6sabresd.o := arm-linux-gnueabihf-gcc -Wp,-MD,board/freescale/mx6sabresd/.mx6sabresd.o.d  -nostdinc -isystem /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.9.2/include -Iinclude  -I/home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x17800000 -Wall -Wstrict-prototypes -Wno-format-security -fno-builtin -ffreestanding -Os -fno-stack-protector -g -fstack-usage -Wno-format-nonliteral -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork -mabi=aapcs-linux -mword-relocations -march=armv7-a -mno-unaligned-access -ffunction-sections -fdata-sections -fno-common -ffixed-r9 -msoft-float -pipe    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(mx6sabresd)"  -D"KBUILD_MODNAME=KBUILD_STR(mx6sabresd)" -c -o board/freescale/mx6sabresd/mx6sabresd.o board/freescale/mx6sabresd/mx6sabresd.c
+cmd_board/freescale/mx6sabresd/mx6sabresd.o := arm-linux-gnueabihf-gcc -Wp,-MD,board/freescale/mx6sabresd/.mx6sabresd.o.d  -nostdinc -isystem /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.9.2/include -Iinclude  -I/home/linux/github/imx6s_uboot_2014/arch/arm/include -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x17800000 -Wall -Wstrict-prototypes -Wno-format-security -fno-builtin -ffreestanding -Os -fno-stack-protector -g -fstack-usage -Wno-format-nonliteral -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork -mabi=aapcs-linux -mword-relocations -march=armv7-a -mno-unaligned-access -ffunction-sections -fdata-sections -fno-common -ffixed-r9 -msoft-float -pipe    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(mx6sabresd)"  -D"KBUILD_MODNAME=KBUILD_STR(mx6sabresd)" -c -o board/freescale/mx6sabresd/mx6sabresd.o board/freescale/mx6sabresd/mx6sabresd.c
 
 source_board/freescale/mx6sabresd/mx6sabresd.o := board/freescale/mx6sabresd/mx6sabresd.c
 
@@ -34,7 +34,7 @@ deps_board/freescale/mx6sabresd/mx6sabresd.o := \
     $(wildcard include/config/fastboot/storage/mmc.h) \
     $(wildcard include/config/imx/udc.h) \
     $(wildcard include/config/usb/ehci/mx6.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/clock.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/clock.h \
     $(wildcard include/config/sys/mx6/hclk.h) \
     $(wildcard include/config/sys/mx6/clk32.h) \
     $(wildcard include/config/fec/mxc.h) \
@@ -211,13 +211,13 @@ deps_board/freescale/mx6sabresd/mx6sabresd.o := \
     $(wildcard include/config/sys/text/base.h) \
     $(wildcard include/config/sys/console/is/in/env.h) \
     $(wildcard include/config/splash/screen/align.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/imx-regs.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/imx-regs.h \
     $(wildcard include/config/sys/cacheline/size.h) \
     $(wildcard include/config/mx6sl.h) \
     $(wildcard include/config/base/addr.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/types.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/types.h \
     $(wildcard include/config/arm64.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/imx-common/gpio.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/imx-common/gpio.h \
   include/configs/mx6sabre_common.h \
     $(wildcard include/config/mx6.h) \
     $(wildcard include/config/use/plugin.h) \
@@ -384,7 +384,7 @@ deps_board/freescale/mx6sabresd/mx6sabresd.o := \
     $(wildcard include/config/cmd/setgetdcr.h) \
     $(wildcard include/config/cmd/source.h) \
     $(wildcard include/config/cmd/ximg.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/config.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/config.h \
     $(wildcard include/config/h/.h) \
     $(wildcard include/config/lmb.h) \
     $(wildcard include/config/sys/boot/ramdisk/high.h) \
@@ -426,24 +426,24 @@ deps_board/freescale/mx6sabresd/mx6sabresd.o := \
   include/asm-offsets.h \
   include/generated/generic-asm-offsets.h \
   include/linux/bitops.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/bitops.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/proc/system.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/bitops.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/proc/system.h \
     $(wildcard include/config/cpu/sa1100.h) \
     $(wildcard include/config/cpu/sa110.h) \
   include/linux/types.h \
     $(wildcard include/config/uid16.h) \
   include/linux/posix_types.h \
   include/linux/stddef.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/posix_types.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/posix_types.h \
   /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stdbool.h \
   include/linux/string.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/string.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/string.h \
     $(wildcard include/config/use/arch/memcpy.h) \
     $(wildcard include/config/use/arch/memset.h) \
   include/linux/linux_string.h \
   include/linux/stringify.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/ptrace.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/proc/ptrace.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/ptrace.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/proc/ptrace.h \
     $(wildcard include/config/arm/thumb.h) \
   /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stdarg.h \
   include/part.h \
@@ -482,7 +482,7 @@ deps_board/freescale/mx6sabresd/mx6sabresd.o := \
     $(wildcard include/config/android/boot/image.h) \
   include/compiler.h \
   /opt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/lib/gcc/arm-linux-gnueabihf/4.9.2/include/stddef.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/byteorder.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/compiler.h \
     $(wildcard include/config/trace/branch/profiling.h) \
@@ -496,7 +496,7 @@ deps_board/freescale/mx6sabresd/mx6sabresd.o := \
   include/linux/byteorder/swab.h \
   include/linux/byteorder/generic.h \
   include/lmb.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/u-boot.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/u-boot.h \
   include/asm-generic/u-boot.h \
     $(wildcard include/config/e500.h) \
     $(wildcard include/config/cpm2.h) \
@@ -520,7 +520,7 @@ deps_board/freescale/mx6sabresd/mx6sabresd.o := \
     $(wildcard include/config/cmd/portio.h) \
     $(wildcard include/config/needs/manual/reloc.h) \
   include/linker_lists.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/global_data.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/global_data.h \
     $(wildcard include/config/omap.h) \
     $(wildcard include/config/at91family.h) \
     $(wildcard include/config/sys/icache/off.h) \
@@ -533,7 +533,7 @@ deps_board/freescale/mx6sabresd/mx6sabresd.o := \
     $(wildcard include/config/trace.h) \
   include/linux/list.h \
   include/linux/poison.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/mach-types.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/mach-types.h \
     $(wildcard include/config/arch/ebsa110.h) \
     $(wildcard include/config/arch/rpc.h) \
     $(wildcard include/config/arch/ebsa285.h) \
@@ -1628,8 +1628,8 @@ deps_board/freescale/mx6sabresd/mx6sabresd.o := \
     $(wildcard include/config/mach/omap5/sevm.h) \
     $(wildcard include/config/mach/armadillo800eva.h) \
     $(wildcard include/config/mach/kzm9g.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/setup.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/u-boot-arm.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/setup.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/u-boot-arm.h \
   include/uuid.h \
   include/vsprintf.h \
     $(wildcard include/config/sys/vsnprintf.h) \
@@ -1641,28 +1641,28 @@ deps_board/freescale/mx6sabresd/mx6sabresd.o := \
     $(wildcard include/config/api.h) \
     $(wildcard include/config/bootp/dns2.h) \
     $(wildcard include/config/netconsole.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/cache.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/system.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/cache.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/system.h \
   include/bootstage.h \
     $(wildcard include/config/bootstage/user/count.h) \
     $(wildcard include/config/bootstage.h) \
     $(wildcard include/config/show/boot/progress.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/crm_regs.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/iomux.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/mx6-pins.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/crm_regs.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/iomux.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/mx6-pins.h \
     $(wildcard include/config/mx6qdl.h) \
     $(wildcard include/config/mx6q.h) \
     $(wildcard include/config/mx6s.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/imx-common/iomux-v3.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/imx-common/iomux-v3.h \
     $(wildcard include/config/sion.h) \
     $(wildcard include/config/vf610.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/mx6dl_pins.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/errno.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/mx6dl_pins.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/gpio.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/gpio.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/gpio.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/gpio.h \
   include/asm-generic/gpio.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/imx-common/boot_mode.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/imx-common/boot_mode.h \
   include/mmc.h \
     $(wildcard include/config/mmc/spi.h) \
     $(wildcard include/config/sys/mmc/max/blk/count.h) \
@@ -1689,17 +1689,17 @@ deps_board/freescale/mx6sabresd/mx6sabresd.o := \
     $(wildcard include/config/rtl8169.h) \
     $(wildcard include/config/uli526x.h) \
     $(wildcard include/config/mv88e61xx/switch.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/mxc_hdmi.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/mxc_hdmi.h \
   include/linux/fb.h \
     $(wildcard include/config/fb/backlight.h) \
     $(wildcard include/config/fb/deferred/io.h) \
   include/ipu_pixfmt.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/io.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/memory.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/io.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/memory.h \
     $(wildcard include/config/discontigmem.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/sys_proto.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/imx-common/regs-common.h \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/arch/../arch-imx/cpu.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/sys_proto.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/imx-common/regs-common.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/arch/../arch-imx/cpu.h \
   include/i2c.h \
     $(wildcard include/config/sys/i2c/max/hops.h) \
     $(wildcard include/config/sys/i2c/direct/bus.h) \
@@ -1718,7 +1718,7 @@ deps_board/freescale/mx6sabresd/mx6sabresd.o := \
     $(wildcard include/config/i2c/multi/bus.h) \
     $(wildcard include/config/sys/max/i2c/bus.h) \
     $(wildcard include/config/soft/i2c/multi/bus.h) \
-  /home/linux/imx6solo/u-boot/u-boot-imx/arch/arm/include/asm/imx-common/mxc_i2c.h \
+  /home/linux/github/imx6s_uboot_2014/arch/arm/include/asm/imx-common/mxc_i2c.h \
 
 board/freescale/mx6sabresd/mx6sabresd.o: $(deps_board/freescale/mx6sabresd/mx6sabresd.o)
 
